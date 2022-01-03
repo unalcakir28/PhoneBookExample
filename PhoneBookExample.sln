@@ -9,25 +9,30 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Contact", "Contact", "{16B3
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Report", "Report", "{D07E442B-D315-4AC6-B29B-6AEA419F0E51}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.API", "Contact.API\Contact.API.csproj", "{F33CE4E5-F7C0-4365-A723-3DFEE60053C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.API", "Contact.API\Contact.API.csproj", "{F33CE4E5-F7C0-4365-A723-3DFEE60053C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Entity", "Contact.Entity\Contact.Entity.csproj", "{51140F38-5024-43CF-970A-D71F6C4556B9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Entity", "Contact.Entity\Contact.Entity.csproj", "{51140F38-5024-43CF-970A-D71F6C4556B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Data", "Contact.Data\Contact.Data.csproj", "{1CC92FCF-8FB4-4319-B265-838E69EBA841}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Data", "Contact.Data\Contact.Data.csproj", "{1CC92FCF-8FB4-4319-B265-838E69EBA841}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Business", "Contact.Business\Contact.Business.csproj", "{EC556C69-C9DF-41E7-B13C-FAA56AD23C6B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Business", "Contact.Business\Contact.Business.csproj", "{EC556C69-C9DF-41E7-B13C-FAA56AD23C6B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.API", "Report.API\Report.API.csproj", "{14369827-89C4-4A83-BFFE-B24220179857}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.API", "Report.API\Report.API.csproj", "{14369827-89C4-4A83-BFFE-B24220179857}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Entity", "Report.Entity\Report.Entity.csproj", "{A1B3BF8D-2831-4783-8E70-FDEA070076C2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Entity", "Report.Entity\Report.Entity.csproj", "{A1B3BF8D-2831-4783-8E70-FDEA070076C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Data", "Report.Data\Report.Data.csproj", "{56590492-63CC-40AD-BC35-FCB08E23BAF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Data", "Report.Data\Report.Data.csproj", "{56590492-63CC-40AD-BC35-FCB08E23BAF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Business", "Report.Business\Report.Business.csproj", "{55FF40EB-594F-49D3-9F5C-39E917BF3FDC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Business", "Report.Business\Report.Business.csproj", "{55FF40EB-594F-49D3-9F5C-39E917BF3FDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Report.Business.Test", "Report.Business.Test\Report.Business.Test.csproj", "{C207BF93-D825-4BBD-81D4-D66892931FF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Report.Business.Test", "Report.Business.Test\Report.Business.Test.csproj", "{C207BF93-D825-4BBD-81D4-D66892931FF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Contact.Business.Test", "Contact.Business.Test\Contact.Business.Test.csproj", "{3AE16BC7-C1FC-4B68-B27D-1043745562C7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7FE3846A-C1D7-4105-9307-D74F0DA9A9EE}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Contact.Business.Test", "Contact.Business.Test\Contact.Business.Test.csproj", "{BF245B42-5FE3-4557-940A-380BC75D3D83}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,10 +76,10 @@ Global
 		{C207BF93-D825-4BBD-81D4-D66892931FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C207BF93-D825-4BBD-81D4-D66892931FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C207BF93-D825-4BBD-81D4-D66892931FF3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3AE16BC7-C1FC-4B68-B27D-1043745562C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3AE16BC7-C1FC-4B68-B27D-1043745562C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3AE16BC7-C1FC-4B68-B27D-1043745562C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3AE16BC7-C1FC-4B68-B27D-1043745562C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF245B42-5FE3-4557-940A-380BC75D3D83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF245B42-5FE3-4557-940A-380BC75D3D83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF245B42-5FE3-4557-940A-380BC75D3D83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF245B42-5FE3-4557-940A-380BC75D3D83}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -91,7 +96,7 @@ Global
 		{56590492-63CC-40AD-BC35-FCB08E23BAF5} = {D07E442B-D315-4AC6-B29B-6AEA419F0E51}
 		{55FF40EB-594F-49D3-9F5C-39E917BF3FDC} = {D07E442B-D315-4AC6-B29B-6AEA419F0E51}
 		{C207BF93-D825-4BBD-81D4-D66892931FF3} = {D07E442B-D315-4AC6-B29B-6AEA419F0E51}
-		{3AE16BC7-C1FC-4B68-B27D-1043745562C7} = {16B3A059-E2FF-4E08-9546-C6ACA10927BD}
+		{BF245B42-5FE3-4557-940A-380BC75D3D83} = {16B3A059-E2FF-4E08-9546-C6ACA10927BD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {56F3C00A-53FF-4E38-B80C-7A59E5F47309}
