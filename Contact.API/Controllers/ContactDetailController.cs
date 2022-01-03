@@ -86,7 +86,7 @@ namespace Contact.API.Controllers
             {
                 var contactDetail = contactDetailAddDto.Adapt<ContactDetail>();
                 await _contactDetailService.Add(contactDetail);
-                return Ok();
+                return Ok(contactDetail.Id);
             }
             catch (Exception Ex)
             {

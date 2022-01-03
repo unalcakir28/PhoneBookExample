@@ -1,0 +1,11 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/report/{everything}",
+      "ServiceName": "report",
+      "UpstreamPathTemplate": "/gateway/report/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "report"
+    }
+  ]
+}

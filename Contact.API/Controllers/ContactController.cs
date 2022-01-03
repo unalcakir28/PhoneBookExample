@@ -93,7 +93,7 @@ namespace Contact.API.Controllers
 
                 var contact = contactAddDto.Adapt<Entity.Contact>();
                 await _contactService.Add(contact);
-                return Ok();
+                return Ok(contact.Id);
             }
             catch (Exception Ex)
             {
