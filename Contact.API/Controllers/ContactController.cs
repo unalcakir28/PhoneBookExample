@@ -25,52 +25,114 @@ namespace Contact.API.Controllers
         [HttpGet("getById")]
         public async Task<IActionResult> GetById(int id)
         {
-            var contact = await _contactService.GetById(id);
+            try
+            {
+                var contact = await _contactService.GetById(id);
 
-            if (contact == null)
-                return NotFound();
+                if (contact == null)
+                    return NotFound();
 
-            contact.ContactDetails = await _contactDetailService.GetAllByContactId(contact.Id);
+                contact.ContactDetails = await _contactDetailService.GetAllByContactId(contact.Id);
 
-            var contactDto = contact.Adapt<ContactDto>();
-            return Ok(contactDto);
+                var contactDto = contact.Adapt<ContactDto>();
+                return Ok(contactDto);
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "");
+                return StatusCode(500);
+            }
         }
 
         [HttpGet("getAll")]
         public async Task<IActionResult> GetAll()
         {
-            var contacts = await _contactService.GetAll();
+            try
+            {
 
-            if (!contacts.Any())
-                return NotFound();
+                var contacts = await _contactService.GetAll();
 
-            var contactsDto = contacts.Select(w => w.Adapt<ContactDto>()).ToList();
-            return Ok(contactsDto);
+                if (!contacts.Any())
+                    return NotFound();
+
+                var contactsDto = contacts.Select(w => w.Adapt<ContactDto>()).ToList();
+                return Ok(contactsDto);
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "");
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("getAllByLocation")]
+        public async Task<IActionResult> GetAllByLocation(string location)
+        {
+            try
+            {
+                var contacts = await _contactService.GetAllByLocation(location);
+
+                if (!contacts.Any())
+                    return NotFound();
+
+                var contactsDto = contacts.Select(w => w.Adapt<ContactDto>()).ToList();
+                return Ok(contactsDto);
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "");
+                return StatusCode(500);
+            }
         }
 
         [HttpPost("add")]
         public async Task<IActionResult> Add(ContactAddDto contactAddDto)
         {
-            var contact = contactAddDto.Adapt<Entity.Contact>();
-            await _contactService.Add(contact);
-            return Ok();
+            try
+            {
+
+                var contact = contactAddDto.Adapt<Entity.Contact>();
+                await _contactService.Add(contact);
+                return Ok();
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "");
+                return StatusCode(500);
+            }
         }
 
         [HttpPut("update")]
         public async Task<IActionResult> Update(ContactUpdateDto contactUpdateDto)
         {
-            var contact = await _contactService.GetById(contactUpdateDto.Id);
-            contact = contactUpdateDto.Adapt(contact);
-            await _contactService.Update(contact);
-            return Ok();
+            try
+            {
+                var contact = await _contactService.GetById(contactUpdateDto.Id);
+                contact = contactUpdateDto.Adapt(contact);
+                await _contactService.Update(contact);
+                return Ok();
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "");
+                return StatusCode(500);
+            }
         }
 
         [HttpDelete("delete")]
         public async Task<IActionResult> Delete(int id)
         {
-            var contact = await _contactService.GetById(id);
-            await _contactService.Delete(contact);
-            return Ok();
+            try
+            {
+                var contact = await _contactService.GetById(id);
+                await _contactService.Delete(contact);
+                return Ok();
+            }
+            catch (Exception Ex)
+            {
+                _logger.LogError(Ex, "");
+                return StatusCode(500);
+            }
         }
     }
 }
