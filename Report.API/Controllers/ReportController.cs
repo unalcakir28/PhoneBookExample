@@ -1,7 +1,7 @@
-using Report.Business;
-using Microsoft.AspNetCore.Mvc;
-using Mapster;
 using Contact.API.Models.ContactModels;
+using Mapster;
+using Microsoft.AspNetCore.Mvc;
+using Report.Business;
 
 namespace Contact.API.Controllers
 {

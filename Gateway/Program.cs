@@ -1,4 +1,3 @@
-using Microsoft.Extensions.DependencyInjection;
 using MMLib.Ocelot.Provider.AppConfiguration;
 using MMLib.SwaggerForOcelot.DependencyInjection;
 using Ocelot.DependencyInjection;

@@ -1,6 +1,4 @@
-﻿using Contact.Entity;
-
-namespace Contact.API.Models.ContactDetailModels
+﻿namespace Contact.API.Models.ContactDetailModels
 {
     public class ContactDetailUpdateDto
     {

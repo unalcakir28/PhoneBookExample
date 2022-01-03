@@ -1,6 +1,6 @@
-using Report.Data;
 using Microsoft.EntityFrameworkCore;
 using Report.Business;
+using Report.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
