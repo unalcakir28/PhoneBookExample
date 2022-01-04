@@ -1,0 +1,11 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/contactDetail/{everything}",
+      "ServiceName": "contactDetail",
+      "UpstreamPathTemplate": "/gateway/contactDetail/{everything}",
+      "UpstreamHttpMethod": [ "Get", "Post", "Put", "Delete" ],
+      "SwaggerKey": "contactDetail"
+    }
+  ]
+}

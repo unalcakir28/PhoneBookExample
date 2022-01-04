@@ -1,0 +1,44 @@
+{
+  "SwaggerEndPoints": [
+    {
+      "Key": "contact",
+      "Config": [
+        {
+          "Name": "Contact Web API",
+          "Version": "v1",
+          "Service": {
+            "Name": "contact",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    },
+    {
+      "Key": "contactDetail",
+      "Config": [
+        {
+          "Name": "Contact Detail Web API",
+          "Version": "v1",
+          "Service": {
+            "Name": "contactDetail",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    },
+    {
+      "Key": "report",
+      "Config": [
+        {
+          "Name": "Report Web Api",
+          "Version": "v1",
+          "Service": {
+            "Name": "report",
+            "Path": "/swagger/v1/swagger.json"
+          }
+        }
+      ]
+    }
+
+  ]
+}
