@@ -20,4 +20,9 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Contact.Business\Contact.Business.csproj" />
+    <ProjectReference Include="..\Contact.Entity\Contact.Entity.csproj" />
+  </ItemGroup>
+
 </Project>

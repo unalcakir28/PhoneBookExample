@@ -31,8 +31,8 @@ namespace Contact.API.Controllers
                 if (report == null)
                     return NotFound();
 
-                var contactDto = report.Adapt<ReportDto>();
-                return Ok(contactDto);
+                var reportDto = report.Adapt<ReportDto>();
+                return Ok(reportDto);
             }
             catch (Exception Ex)
             {
@@ -51,8 +51,8 @@ namespace Contact.API.Controllers
                 if (!reports.Any())
                     return NotFound();
 
-                var contactsDto = reports.Select(w => w.Adapt<ReportDto>()).ToList();
-                return Ok(contactsDto);
+                var reportsDto = reports.Select(w => w.Adapt<ReportDto>()).ToList();
+                return Ok(reportsDto);
             }
             catch (Exception Ex)
             {
